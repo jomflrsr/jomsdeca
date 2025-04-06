@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home ┃ JOM</title>
+    <link rel="icon" href="jfavicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #ffebc6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            display: inline;
+            text-align: left;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        nav {
+            padding: 10px;
+            text-align: right;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        main {
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 95%;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            padding: 10px;
+        }
+
+        .img-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .portfolio-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text-content, .img-content {
+            flex: 1 1 300px;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .portfolio-btn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="Home">
+        <img src="jfavicon.ico" alt="Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 style="text-align: center; font-family: 'Trebuchet MS', sans-serif;">J<span style="color: orange;">0</span>M' Personal Portfolio</h1>
+
+        <div class="flex-container">
+            <div class="text-content">
+                <h1>Hi, we are <span style="color: orange; font-family: Cambria;">Jomar Flores &amp; <br> Deca Mae Dayuday</span></h1>
+                <h3 style="font-family: Cambria; font-style: italic; color: grey;">IT Students from Cebu Eastern College</h3>
+                <a href="portfolio.html">
+                    <button class="portfolio-btn">See Portfolios</button>
+                </a>
+                <br><br>
+                <h2>About Us</h2>
+                <aside style="font-size: 18px; color: #444; line-height: 1.5;">
+                    We are passionate about technology and innovation, specializing in web development, programming, and creative digital projects. Our goal is to create impactful solutions that enhance user experiences. Follow our journey as we explore the world of IT and build meaningful projects.
+                </aside>
+            </div>
+            <div class="img-content">
+                <div class="img-container">
+                    <img src="sobranglatinass.png" alt="Sobrang Latina">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025, JOM.</p>
+    </footer>
+</body>
+</html>
